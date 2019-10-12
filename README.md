@@ -3,11 +3,12 @@ A step by step guide to install Kinect v2 libraries (libfreenect2 and pylibfreen
 
 ## 1) Install OpenCV 4.1.1
 
-The current OS image comes with OpenCV 3.1.1. Use this script to upgrade the OpenCV version to 4.1.1. 
+The current OS image comes with OpenCV 3.1.1. Use installOpenCV.sh script to upgrade the OpenCV version to 4.1.1. Before you run the script, please update username and password information in the script. In your home directory, execute the following:
 
 ```bash
+mkdir opencv
 chmod +x ./installOpenCV.sh
-./installOpenCV.sh
+./installOpenCV.sh /home/opencv
 ```
 
 CMake may raise the following error in the attempt. If this does not happen, continue with the second step.
@@ -105,7 +106,7 @@ sudo -E python3 pylibfreenect2/setup.py
 
 Then test the installation by running:
 ```bash
-python3 home/nano/pylibfreenect2/examples/multiframe_listener.py 
+python3 /home/nano/pylibfreenect2/examples/multiframe_listener.py 
 ```
 
 
