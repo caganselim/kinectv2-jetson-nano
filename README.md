@@ -109,7 +109,7 @@ Then test the installation by running:
 python3 /home/nano/pylibfreenect2/examples/multiframe_listener.py 
 ```
 
-## Additional step: Diasble Autosuspend Feature
+## Additional step: Disable Autosuspend Feature
 
 The Jetson Nano comes with the feature of USB autosuspend ehich may cause errors with the Kinect V2 in a long run. To disable, execute this:
 
